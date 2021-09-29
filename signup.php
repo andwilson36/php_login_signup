@@ -21,17 +21,18 @@
         <h1 class="form-header">Sign-Up</h1>
         <form>
             <div>
-             Username
-            <input></input>   
+                Username
+                <input></input>
             </div>
             <div>
-             Password
-            <input></input>   
+                Password
+                <input></input>
             </div>
             <div>
-             Repeat Password
-            <input></input>   
+                Repeat Password
+                <input></input>
             </div>
+            <button>Sign-Up</button>
         </form>
     </main>
 </body>
