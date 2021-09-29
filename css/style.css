@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(104, 92, 110);
+}
+
+.success-message {
+    margin-top: 5rem;
+    text-align: center;
+}
