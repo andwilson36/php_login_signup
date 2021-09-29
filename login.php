@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
     <title>Login</title>
 </head>
 
@@ -16,7 +17,20 @@
     include_once 'header.php';
     ?>
 
-    <h1 class="success-message">Login<h1>
+    <main>
+        <h1 class="form-header">Login</h1>
+        <form>
+            <div>
+                Username
+                <input type="text" name="username" placeholder="Username...">
+            </div>
+            <div>
+                Password
+                <input type="password" name="password" placeholder="Password...">
+            </div>
+            <button type="submit" name="submit">Login</button>
+        </form>
+    </main>
 </body>
 
 </html>
