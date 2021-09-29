@@ -1,5 +1,6 @@
 header {
     background-color: rgb(90, 81, 95);
+    overflow: hidden;
 }
 
 body {
@@ -8,6 +9,19 @@ body {
 
 .logo {
     font-size: 4rem;
+}
+
+.header-nav {
+    display: inline;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    margin: 1.5rem;
 }
 
 .success-message {
