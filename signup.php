@@ -22,17 +22,17 @@
         <form>
             <div>
                 Username
-                <input></input>
+                <input type="text" name="username" placeholder="Username...">
             </div>
             <div>
                 Password
-                <input></input>
+                <input type="password" name="password" placeholder="Password...">
             </div>
             <div>
                 Repeat Password
-                <input></input>
+                <input type="password" name="password-repeat" placeholder="Repeat Password...">
             </div>
-            <button>Sign-Up</button>
+            <button type="submit" name="submit">Sign-Up</button>
         </form>
     </main>
 </body>
