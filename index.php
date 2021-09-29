@@ -9,6 +9,11 @@
     <title>Website</title>
 </head>
 <body>
+    
+    <?php
+        include_once 'header.php';
+    ?>
+
     <h1 class="success-message">Login was successful<h1>
 </body>
 </html>
