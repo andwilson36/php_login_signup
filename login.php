@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>Sign Up</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     include_once 'header.php';
     ?>
 
-    <h1 class="success-message">Sign-Up<h1>
+    <h1 class="success-message">Login<h1>
 </body>
 
 </html>
