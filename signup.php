@@ -19,7 +19,7 @@
 
     <main>
         <h1 class="form-header">Sign-Up</h1>
-        <form action="signup.inc.php" method="post">
+        <form action="includes/signup.inc.php" method="post">
             <div>
                 Username
                 <input type="text" name="username" placeholder="Username...">
