@@ -63,3 +63,35 @@ function createUser($connection, $username, $password) {
     header("location: ../signup.php?error=none");
     exit();
 }
+
+function emptyInputLogin($username, $password) {
+    $result = false;
+    if (empty($username) || empty($password)) {
+        $result = true;
+    } 
+    return $result;
+}
+
+function loginUser($connection, $username, $password) {
+    $uidExists = uidExists($connection, $username);
+
+    if ($uidExists === false) {
+        header("location: ../login.php?error=wronglogin");
+        exit();
+    }
+
+    $hash = $uidExists["usersPassword"];
+    $checkPassword = password_verify($password, $hash);
+
+    if ($checkPassword === false) {
+        header("location: ../login.php?error=wronglogin");
+        exit(); 
+    }
+    else if ($checkPassword === true) {
+        session_start();
+        $_SESSION["userid"] = $uidExists["usersId"]; 
+        $_SESSION["useruid"] = $uidExists["usersUid"]; 
+        header("location: ../index.php");
+        exit(); 
+    }
+}
