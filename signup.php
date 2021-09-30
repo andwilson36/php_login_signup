@@ -35,6 +35,29 @@
             <button type="submit" name="submit">Sign-Up</button>
         </form>
     </main>
+
+    <?php 
+        if(isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyinput") {
+                echo "<p>Fill in all fields!<p>";
+            }
+            else if ($_GET["error"] == "emptyuid") {
+                echo "<p>Fill in username!<p>";
+            }
+            else if ($_GET["error"] == "matchfail") {
+                echo "<p>Passwords do not match!<p>";
+            }
+            else if ($_GET["error"] == "stmtfail") {
+                echo "<p>Something went wrong!<p>";
+            }
+            else if ($_GET["error"] == "usernametaken") {
+                echo "<p>Username is taken!<p>";
+            }
+            else {
+                echo "<p>Success!<p>";
+            }
+        }
+    ?>
 </body>
 
 </html>
