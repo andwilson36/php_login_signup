@@ -19,7 +19,7 @@
 
     <main>
         <h1 class="form-header">Login</h1>
-        <form>
+        <form action="login.inc.php" method="post">
             <div>
                 Username
                 <input type="text" name="username" placeholder="Username...">
